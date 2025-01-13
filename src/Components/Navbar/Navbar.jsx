@@ -1,7 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { MdOutlineMenu } from "react-icons/md";
+import useAuth from "../Hooks/useAuth";
 const Navbar = () => {
+  const {user,logout} = useAuth();
+  const handleLogout = () => {
+    logout()
+    .then(() => {})
+  }
 const navLinks = <>
   <NavLink to="/">
         {({ isPending }) => (
@@ -73,7 +79,13 @@ const navLinks = <>
           </a>
         </li>
         <li className=" hover:bg-white hover:text-black font-bold rounded-lg"><a>Settings</a></li>
-        <li className=" hover:bg-white hover:text-black font-bold rounded-lg"><a>Logout</a></li>
+         {
+             user ? <>
+             <li className=" hover:bg-white hover:text-black font-bold rounded-lg"><a onClick={handleLogout}>Logout</a></li>
+             </>  : <>
+             <li className=" hover:bg-white hover:text-black font-bold rounded-lg"><a href="/login">SignUp</a></li>
+             </>
+         }
       </ul>
     </div>
   </div>

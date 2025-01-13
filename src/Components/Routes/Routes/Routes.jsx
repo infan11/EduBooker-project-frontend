@@ -9,6 +9,7 @@ import Admission from "../../Admission/Admission/Admission";
 import Profile from "../../Profile/Profile/Profile";
 import Login from "../../Authentication/Login/Login";
 import Register from "../../Authentication/Register/Register";
+import ForgotPassword from "../../Authentication/ForgotPassword/ForgotPassword";
 
 export const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
             {
                 path : "/register",
                 element : <Register/>
+            },
+            {
+                path : "/forgotPassword",
+                element : <ForgotPassword/>
             }
         ]
     },

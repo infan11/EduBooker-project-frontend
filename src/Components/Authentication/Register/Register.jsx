@@ -7,48 +7,73 @@ import {
 } from "@material-tailwind/react";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
-// import useAuth from "../../../Hooks/useAuth";
+
 // import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 // import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
-// import useAxiosSecure from "../../../Hooks/useAxiosSecure";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import useAuth from "../../Hooks/useAuth";
+import toast from "react-hot-toast";
 
 const Register = () => {
-    // const { createUser, googleAuth, user, updateUserProfile } = useAuth();
+    const {createUser , googleUser , updateUserProfile} = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
-    // const from = location.state?.from?.pathname || "/";
-    // const axiosPublic = useAxiosPublic();
-    // const axiosSecure = useAxiosSecure();
+    const axiosSecure = useAxiosSecure();
+    const from = location.state?.from?.pathname || "/";
+
     const { register, handleSubmit,  formState: { errors }, } = useForm()
+ 
     const onSubmit = data => {
         console.log(data);
+   createUser(data.email , data.password)
+   .then(result => {
+    const users = result.user;
+    console.log(users);
+    updateUserProfile(data.name, null)
+
+    .then(res => {
+        const usersInfo = {
+            name : data.name,
+            email : data.email,
+        }
+       axiosSecure.post('/users' , usersInfo)
+       .then(res => {
+     if(res.data.insertedId){
+        return toast.success("Successfully Signin")
+     }
+     navigate(from, { replace: true })
+                
+       })
+    })
+
+
+   })
         
     }
-    // const handelGoogle = () => {
-    //     googleAuth()
-    //         .then(res => {
-    //             const google = res.user;
-    //             console.log(google);
-    //             const usersInfo = {
-    //                 email: res.user?.email,
-    //                 name: res.user?.displayName,
-    //                 role : "guest",
-    //                 status : "Verified"
-    //             };
-    //             toast.promise(
-    //                 axiosSecure.put("/users", usersInfo),
-                   
-    //                 {
-    //                     loading: 'Loading...',
-    //                     success: `Sucessfully Signin ${user?.name || user?.displayName}`,
-    //                     error: <b>Could not save user.</b>,
-    //                 },
-    //                 navigate(from, { replace: true })
-    //             );
+    const handelGoogle = () => {
+        googleUser()
+            .then(res => {
+                const google = res.user;
+                console.log(google);
+                const usersInfo = {
+                    email: res.user?.email,
+                    name: res.user?.displayName,
+                
+                };
+           
+                     axiosSecure.post("/users", usersInfo)
+                     .then(res => {
+                       if(res.data.insertedId){
+                        return toast.success("Successfully Google Sign")
+                       }
 
-    //         })
-    // }
+                     }) 
+                    navigate(from, { replace: true })
+                
+
+            })
+    }
     return (
         <div className="">
             <div className="hero  min-h-screen  max-w-7xl mx-auto md:px-5">
@@ -109,7 +134,7 @@ const Register = () => {
                                     <div className="divider">OR</div>
                                 </form>
 
-                                <div className=" mx-auto "> <button className="flex text-[14px] bg-white items-center font-bold btn rounded-full"><FcGoogle /> Continue With Google</button></div>
+                                <div className=" mx-auto "> <button onClick={handelGoogle} className="flex text-[14px] bg-white items-center font-bold btn rounded-full"><FcGoogle /> Continue With Google</button></div>
                                 <Typography color="gray" className="mt-3 text-center font-normal">
                                     Already have an account?{" "}
                                     <a href="/login" className="font-medium text-gray-900">
@@ -121,7 +146,7 @@ const Register = () => {
                         </div>
                     </div>
                     <div className="text-center hidden sm:block ">
-                        <img className=" md:w-[650px] md:h-[600px] lg:w-[685px] lg:h-[685px]   rounded-l-2xl" src="https://i.ibb.co.com/GcM1BY0/signin.png" alt="" />
+                        <img className=" md:w-[650px] md:h-[600px] lg:w-[685px] lg:h-[685px]   rounded-l-2xl" src="https://i.ibb.co.com/NN74N96/singin.png" alt="" />
                     </div>
                 </div>
             </div>
