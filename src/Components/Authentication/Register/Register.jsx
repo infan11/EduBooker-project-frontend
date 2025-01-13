@@ -72,7 +72,7 @@ const Register = () => {
                                             {...register("name", { required: true })}
 
                                         />
-                                        {errors.name && <span className="text-red-500  text-sm font-bold">This field is required</span>}
+                                        {errors.name && <span className="text-red-700  text-sm font-bold">This field is required</span>}
 
                                         <Input
                                             size="lg"
@@ -82,7 +82,7 @@ const Register = () => {
                                             color="deep-purple"
                                             {...register("email", { required: true })}
                                         />
-                                        {errors.email && <span className="text-red-500  text-sm font-bold">This field is required</span>}
+                                        {errors.email && <span className="text-red-700  text-sm font-bold">This field is required</span>}
 
                                         <Input
                                             type="password"
@@ -91,11 +91,11 @@ const Register = () => {
                                             placeholder="********"
                                             label="Password"
                                             color="deep-purple"
-                                            {...register("password", { required: true, minLength: 6, maxLength: 8 })}
+                                            {...register("password", { required: true, minLength: 8, maxLength: 20 })}
                                         />
-                                        {errors.password?.type && <span className="text-red-500 ">This field is reqiure</span>}
-                                        {errors.password?.type === 'minLength' && <span className="text-red-500 ">This pass must 6 Characters</span>}
-                                        {errors.password?.type === 'maxLength' && <span className="text-red-500 ">This pass only 8 Characters</span>}
+                                        {errors.password?.type && <span className="text-red-700 ">This field is reqiure</span>}
+                                        {errors.password?.type === 'minLength' && <span className="text-red-700 ">This pass must 6 Characters</span>}
+                                        {errors.password?.type === 'maxLength' && <span className="text-red-700 ">This pass only 20 Characters</span>}
                                     </div>
                                    <div className="flex gap-3 mt-4">
                                    <input type="checkbox" defaultChecked className="checkbox ml-3 mb-  checkbox-primary" />
