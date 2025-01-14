@@ -54,7 +54,7 @@ const ForgotPassword = () => {
                 <title>Enter Your Email</title>
             </Helmet>
             <div className=" w-full mx-auto p-10 px-10 shadow-xl rounded-2xl">
-                <p className="text-2xl text-center font-extrabold text-[#8103ffcc] ">Reset Your Password</p>
+                <p className="text-2xl text-center font-extrabold text-[#ffff] ">Reset Your Password</p>
                 <form onSubmit={handleForgetPassword} className="mt-5 mx-auto">
                     <div className="w-full mx-auto font-bold ">
                         <Input
@@ -63,7 +63,7 @@ const ForgotPassword = () => {
                             inputRef={emailRef}
                             color="deep-purple"
                             name="email"
-                            className="text-[#8103ffcc] rounded-lg"
+                            className="text-[#ffff] rounded-lg"
                             {...register("email", { required: true })}
                         />
                         {errors.email && (
@@ -73,7 +73,7 @@ const ForgotPassword = () => {
                         )}
                     </div>
                     <div className="  mt-4 ">
-                        <button  className="btn    w-full mx-auto   rounded-full mt-2 px-4  bg-[#8103ffcc] hover:bg-[#8103ffcc] text-white">
+                        <button  className="btn    w-full mx-auto   rounded-full mt-2 px-4  bg-[#ffff] hover:bg-[#ffff] text-white">
                             Send Your Email
                         </button>
                     </div>

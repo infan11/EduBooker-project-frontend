@@ -82,7 +82,7 @@ const Register = () => {
                     <div className="  lg:w-full bg-white shrink-0 rounded-r-2xl shadow-2xl">
                         <div className="card-body">
                             <Card color="  transparent" className="" shadow={false}>
-                                <p className="text-2xl font-extrabold text-center mb-3 transition-all  text-[#8103ffcc]"> SIGNIN </p>
+                                <p className="text-2xl font-extrabold text-center mb-3 transition-all  text-[#ffff]"> SIGNIN </p>
 
 
 
@@ -128,7 +128,7 @@ const Register = () => {
                                    </div>
                                       
                                     
-                                    <button className=" w-full uppercase bg-[#8103ffcc] hover:bg-[#8103ffcc] text-white mt-2 btn rounded-badge" fullWidth>
+                                    <button className=" w-full uppercase bg-[#ffff] hover:bg-[#ffff] text-white mt-2 btn rounded-badge" fullWidth>
                                         sign in
                                     </button>
                                     <div className="divider">OR</div>

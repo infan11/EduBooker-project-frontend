@@ -65,7 +65,7 @@ const Login = () => {
           <div className="  lg:w-full bg-white shrink-0 rounded-r-2xl shadow-2xl">
             <div className="card-body">
               <Card color="  transparent" className="" shadow={false}>
-                <p className="text-2xl font-extrabold text-center mb-3 transition-all  text-[#8103ffcc]"> SIGNUP </p>
+                <p className="text-2xl font-extrabold text-center mb-3 transition-all  text-[#ffff]"> SIGNUP </p>
 
 
 
@@ -97,7 +97,7 @@ const Login = () => {
                   </div>
                   <Link to={"/forgotPassword"}>
                     <label className="label ml-2 font-bold">
-                      <a href="#" className="label-text-alt link link-hover text-[#8103ffcc]">Forgot password?</a>
+                      <a href="#" className="label-text-alt link link-hover text-[#ffff]">Forgot password?</a>
                     </label>
                   </Link>
                   <div className="flex gap-3 mt-4">
@@ -106,7 +106,7 @@ const Login = () => {
                   </div>
 
 
-                  <button className=" w-full uppercase bg-[#8103ffcc] hover:bg-[#8103ffcc] text-white mt-2 btn rounded-badge" fullWidth>
+                  <button className=" w-full uppercase bg-[#ffff] hover:bg-[#ffff] text-white mt-2 btn rounded-badge" fullWidth>
                     sign in
                   </button>
                   <div className="divider">OR</div>

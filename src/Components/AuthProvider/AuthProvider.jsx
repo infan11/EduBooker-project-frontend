@@ -30,11 +30,12 @@ const AuthProvider = ({ children }) => {
     setLoading(false);
     return sendPasswordResetEmail(auth , email , password)
    }
-   const updateUserProfile = ({name, photo}) => {
-    return updateProfile(auth.currentUser , {
-        displayName : name , photoURL: photo
-    })
-   }
+   const updateUserProfile = ({ displayName, photoURL }) => {
+    return updateProfile(auth.currentUser, {
+        displayName,
+        photoURL,
+    });
+};
    useEffect(() => {
     const onSubscribe = onAuthStateChanged(auth , currentUser => {
         setUser(currentUser)
