@@ -1,0 +1,97 @@
+// [
+//     {
+//             "name": "Dhaka College",
+//       "image": "https://i.ibb.co.com/jZQyHFc/Dhaka-College.webp",
+//       "admissionDates": "2025-01-15 to 2025-02-10",
+//       "events": ["Annual Cultural Program", "Science Fair", "Sports Day"],
+//       "researchHistory": "Environmental Studies, Microbiology, Renewable Energy",
+//       "sports": ["Football", "Cricket", "Volleyball"],
+//       "rating": 4.7
+//     },
+//     {
+//             "name": "Notre Dame College",
+//       "image": "https://i.ibb.co.com/QmRDPW8/notre-College.jpg",
+//       "admissionDates": "2025-02-01 to 2025-02-28",
+//       "events": ["Debate Competition", "Art Exhibition", "Annual Picnic"],
+//       "researchHistory": "Physics, Chemistry, Astronomy",
+//       "sports": ["Basketball", "Table Tennis", "Swimming"],
+//       "rating": 4.8
+//     },
+//     {
+//             "name": "Rajshahi College",
+//       "image": "https://i.ibb.co.com/VxpRbcw/rajshahi-college-1.jpg",
+//       "admissionDates": "2025-01-20 to 2025-02-15",
+//       "events": ["Science Olympiad", "Cultural Night", "Alumni Meetup"],
+//       "researchHistory": "Biotechnology, Sustainable Agriculture, Climate Change",
+//       "sports": ["Cricket", "Badminton", "Football"],
+//       "rating": 4.6
+//     },
+  
+//     {
+//             "name": "Chittagong College",
+//       "image": "https://i.ibb.co.com/YhN0Vt4/Chittagong-College-1024x427.jpg",
+//       "admissionDates": "2025-02-01 to 2025-02-28",
+//       "events": ["Annual Sports Day", "Tech Talk", "Cultural Fest"],
+//       "researchHistory": "Marine Biology, Forestry, Renewable Energy",
+//       "sports": ["Cricket", "Football", "Rowing"],
+//       "rating": 4.6
+//     },
+//     {
+//             "name": "Holy Cross College",
+//       "image": "https://i.ibb.co.com/zn2ZjFs/holly-Cross.jpg",
+//       "admissionDates": "2025-02-05 to 2025-03-01",
+//       "events": ["Quiz Competition", "Annual Picnic", "Drama Festival"],
+//       "researchHistory": "Education, Environmental Science, Women Empowerment",
+//       "sports": ["Table Tennis", "Basketball", "Swimming"],
+//       "rating": 4.8
+//     },
+//     {
+//             "name": "Govt. City College, Chittagong",
+//       "image": "https://i.ibb.co.com/DRrMk6F/CTC.jpg",
+//       "admissionDates": "2025-01-20 to 2025-02-15",
+//       "events": ["Cultural Day", "Science Olympiad", "Sports Meet"],
+//       "researchHistory": "Urban Planning, Microbiology, Renewable Resources",
+//       "sports": ["Cricket", "Football", "Badminton"],
+//       "rating": 4.5
+//     },
+//     {
+//             "name": "Mymensingh Medical College",
+//       "image": "https://i.ibb.co.com/dJm21Lm/OIP.jpg",
+//       "admissionDates": "2025-01-30 to 2025-02-25",
+//       "events": ["Debate Festival", "Art Exhibition", "Music Night"],
+//       "researchHistory": "Agriculture, Fisheries, Environmental Studies",
+//       "sports": ["Badminton", "Volleyball", "Swimming"],
+//       "rating": 4.4
+//     },
+//     {
+      
+//       "name": "Sylhet Govt. College",
+//       "image": "https://i.ibb.co.com/VxpRbcw/rajshahi-college-1.jpg",
+//       "admissionDates": "2025-02-10 to 2025-03-10",
+//       "events": ["Cultural Fest", "Drama Performance", "Science Fair"],
+//       "researchHistory": "Mineral Studies, Environmental Science, Language Research",
+//       "sports": ["Cricket", "Football", "Table Tennis"],
+//       "rating": 4.6
+//     },
+//     {
+      
+//       "name": "Comilla Victoria College",
+//       "image": "https://i.ibb.co.com/dQHPCf1/OIP-1.jpg",
+//       "admissionDates": "2025-02-01 to 2025-02-28",
+//       "events": ["Annual Picnic", "Sports Day", "Alumni Meetup"],
+//       "researchHistory": "Literature, History, Cultural Studies",
+//       "sports": ["Football", "Badminton", "Athletics"],
+//       "rating": 4.5
+//     },
+//     {
+      
+//       "name": "Barisal Govt. College",
+//       "image": "https://i.ibb.co.com/PrGRd54/maxresdefault.jpg",
+//       "admissionDates": "2025-01-25 to 2025-02-20",
+//       "events": ["Cultural Program", "Science Fair", "Debate Competition"],
+//       "researchHistory": "Fisheries, Marine Biology, Rural Development",
+//       "sports": ["Cricket", "Volleyball", "Swimming"],
+//       "rating": 4.6
+//     }
+//   ]
+  
