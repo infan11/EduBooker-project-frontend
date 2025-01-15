@@ -28,7 +28,7 @@ const CollegeCard = () => {
             <p className="text-gray-600">
               <strong>Research History:</strong> {college.researchHistory}
             </p>
-            <button className="mt-4 w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+            <button className="mt-4 w-full btn bg-white text-black py-2 px-4 rounded shadow-md hover:bg-white">
               Details
             </button>
           </div>
