@@ -76,6 +76,9 @@ const Register = () => {
     }
     return (
         <div className="">
+            <Helmet>
+                <title>EDUBOOKER - SIGNIN</title>
+            </Helmet>
             <div className="hero  min-h-screen  max-w-7xl mx-auto md:px-5">
                 <div data-aos="zoom-in" className=" grid md:grid-cols-2 rounded-r-2xl shadow-2xl">
                     

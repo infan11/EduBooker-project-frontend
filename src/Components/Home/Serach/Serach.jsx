@@ -45,15 +45,13 @@ const Search = () => {
             <p className="text-gray-600">
               <strong>Admission Dates:</strong> {college.admissionDates}
             </p>
-            <p className="text-gray-600">
-              <strong>Events:</strong> {college.events.join(", ")}
-            </p>
+           
             <p className="text-gray-600">
               <strong>Research History:</strong> {college.researchHistory}
             </p>
-            <button className="mt-4 w-full btn bg-white text-black py-2 px-4 rounded shadow-md hover:bg-white">
+            <Link to={`/details/${college._id}`}><button className="mt-4 w-full btn bg-white text-black py-2 px-4 rounded shadow-md hover:bg-white">
               Details
-            </button>
+            </button></Link>
           </div>
         </div>
               ))

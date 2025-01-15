@@ -3,7 +3,7 @@ import useCollegesHooks from '../../Hooks/useCollegesHooks';
 import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
-const CollegeCard = () => {
+const HomeCard = () => {
     const [colleges] = useCollegesHooks();
     const {user} = useAuth();
     const navigate = useNavigate();
@@ -14,7 +14,7 @@ const CollegeCard = () => {
     }
     return (
         <div  data-aos="fade-up">
-              <h1 className='text-2xl font-bold text-center mt-7'>College Available</h1>
+              
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
       {colleges.map((college) => (
         <div
@@ -32,11 +32,21 @@ const CollegeCard = () => {
               <strong>Admission Dates:</strong> {college.admissionDates}
             </p>
             <p className="text-gray-600">
-              
+            <p><strong>Location:</strong> {college.location}</p>
             </p>
-            <p className="text-gray-600">
-              <strong>Research History:</strong> {college.researchHistory}
-            </p>
+            {college.reviews.length > 0 && (
+            <div className="my-3">
+              {college.reviews.map((review, index) => (
+                <div key={index} className="border p-4 mb-2">
+                  <p>
+                    <strong>{review.reviewer}</strong> ({review.rating}⭐):
+                  </p>
+                  <p>{review.text}</p>
+                </div>
+              ))}
+            </div>
+          )}
+         
             {
               user  ? (<Link to={`/details/${college._id}`}>
               <button className="mt-4 w-full btn bg-white text-black py-2 px-4 rounded shadow-md hover:bg-white">
@@ -58,4 +68,4 @@ const CollegeCard = () => {
     );
 };
 
-export default CollegeCard;
+export default HomeCard;

@@ -14,6 +14,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAxiosSecure from "../../Hooks/useAxiosSecure";
 import useAuth from "../../Hooks/useAuth";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const { createUser, googleUser, login } = useAuth();
@@ -59,6 +60,9 @@ const Login = () => {
   }
   return (
     <div className="">
+      <Helmet>
+                <title>EDUBOOKER - SIGNUP</title>
+            </Helmet>
       <div className="hero  min-h-screen  max-w-7xl mx-auto md:px-5">
         <div data-aos="zoom-in" className=" grid md:grid-cols-2 rounded-r-2xl shadow-2xl">
 

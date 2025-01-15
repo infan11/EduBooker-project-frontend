@@ -5,13 +5,18 @@ import CollegeCard from '../CollegeCard/CollegeCard';
 import ImageSection from '../ImageSection/ImageSection';
 import RserachPaper from './RserachPaper/RserachPaper';
 import ReviewSection from '../ReviewSection/ReviewSection';
+import HomeCard from '../HomeCard/HomeCard';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>EDUBOOKER - HOME</title>
+            </Helmet>
            <Banner/>
            <CollegeDialogue/>
-           <CollegeCard></CollegeCard>
+           <HomeCard/>
            <ImageSection/>
            <RserachPaper/>
          <ReviewSection/>

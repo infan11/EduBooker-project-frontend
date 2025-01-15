@@ -11,6 +11,8 @@ import Login from "../../Authentication/Login/Login";
 import Register from "../../Authentication/Register/Register";
 import ForgotPassword from "../../Authentication/ForgotPassword/ForgotPassword";
 import Serach from "../../Home/Serach/Serach";
+import Details from "../../Details/Details";
+import MyCollege from "../../MyCollege/MyCollege/MyCollege";
 
 export const router = createBrowserRouter([
     {
@@ -23,7 +25,7 @@ export const router = createBrowserRouter([
                 element : <Home/>
             },
             {
-                path : "/serach",
+                path : "/search",
                 element : <Serach/>
             },
             {
@@ -31,8 +33,16 @@ export const router = createBrowserRouter([
                 element : <Colleges/>
             },
             {
+                path : "/details/:id",
+                element : <Details/>
+            },
+            {
                 path : "/admission",
                 element : <Admission/>
+            },
+            {
+                path : "/myCollege",
+                element : <MyCollege/>
             },
             {
                 path : "Profile", 

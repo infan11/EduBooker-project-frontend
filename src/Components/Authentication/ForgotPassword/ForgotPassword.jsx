@@ -49,7 +49,7 @@ const ForgotPassword = () => {
 
     }
     return (
-        <div className="max-w-7xl mx-auto px-5 rounded-xl flex min-h-screen justify-center items-center">
+        <div  data-aos="fade-up" className="max-w-7xl mx-auto px-5 rounded-xl flex min-h-screen justify-center items-center">
             <Helmet>
                 <title>Enter Your Email</title>
             </Helmet>

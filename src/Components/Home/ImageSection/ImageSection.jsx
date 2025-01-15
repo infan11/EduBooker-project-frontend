@@ -2,7 +2,7 @@
 
 const ImageSection = () => {
     return (
-        <div>
+        <div  data-aos="fade-up">
             <div className="px-6 my-8  ">
   <h2 className="text-2xl font-bold mb-4 uppercase text-center ">graduate person</h2>
   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">

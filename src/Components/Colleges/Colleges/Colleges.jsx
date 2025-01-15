@@ -1,9 +1,16 @@
 import React from 'react';
+import CollegeCard from '../../Home/CollegeCard/CollegeCard';
+import CollegeBanner from './CollegeBanner/CollegeBanner';
+import { Helmet } from 'react-helmet';
 
 const Colleges = () => {
     return (
         <div>
-            This Colleges  Routes
+            <Helmet>
+                <title>EDUBOOKER - COLLEGES</title>
+            </Helmet>
+            <CollegeBanner/>
+         <CollegeCard/>
         </div>
     );
 };
