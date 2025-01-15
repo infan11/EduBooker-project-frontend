@@ -13,11 +13,13 @@ import ForgotPassword from "../../Authentication/ForgotPassword/ForgotPassword";
 import Serach from "../../Home/Serach/Serach";
 import Details from "../../Details/Details";
 import MyCollege from "../../MyCollege/MyCollege/MyCollege";
+import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
+import ErrorPage from "../../ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        // TO DO : Error Element use
+        errorElement : <ErrorPage/>,
         element: <Main></Main> , 
         children : [
             {
@@ -34,15 +36,15 @@ export const router = createBrowserRouter([
             },
             {
                 path : "/details/:id",
-                element : <Details/>
+                element : <PrivateRoutes><Details/></PrivateRoutes>
             },
             {
                 path : "/admission",
-                element : <Admission/>
+                element :<PrivateRoutes><Admission/></PrivateRoutes>
             },
             {
                 path : "/myCollege",
-                element : <MyCollege/>
+                element : <PrivateRoutes> <MyCollege/></PrivateRoutes>
             },
             {
                 path : "Profile", 
