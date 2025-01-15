@@ -10,6 +10,7 @@ import Profile from "../../Profile/Profile/Profile";
 import Login from "../../Authentication/Login/Login";
 import Register from "../../Authentication/Register/Register";
 import ForgotPassword from "../../Authentication/ForgotPassword/ForgotPassword";
+import Serach from "../../Home/Serach/Serach";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
             {
                 path : "/",
                 element : <Home/>
+            },
+            {
+                path : "/serach",
+                element : <Serach/>
             },
             {
                 path : "/colleges",

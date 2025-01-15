@@ -4,6 +4,7 @@ import CollegeDialogue from '../CollegeDialogue/CollegeDialogue';
 import CollegeCard from '../CollegeCard/CollegeCard';
 import ImageSection from '../ImageSection/ImageSection';
 import RserachPaper from './RserachPaper/RserachPaper';
+import ReviewSection from '../ReviewSection/ReviewSection';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
            <CollegeCard></CollegeCard>
            <ImageSection/>
            <RserachPaper/>
+         <ReviewSection/>
         </div>
     );
 };

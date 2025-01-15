@@ -128,13 +128,13 @@ const Register = () => {
                                    </div>
                                       
                                     
-                                    <button className=" w-full uppercase bg-[#ffff] hover:bg-[#ffff] text-white mt-2 btn rounded-badge" fullWidth>
+                                    <button className=" w-full uppercase bg-[#ffff] hover:bg-[#ffff] text-black mt-2 btn rounded-badge" fullWidth>
                                         sign in
                                     </button>
                                     <div className="divider">OR</div>
                                 </form>
 
-                                <div className=" mx-auto "> <button onClick={handelGoogle} className="flex text-[14px] bg-white items-center font-bold btn rounded-full"><FcGoogle /> Continue With Google</button></div>
+                                <div className=" mx-auto "> <button onClick={handelGoogle} className="flex text-[14px] bg-white text-black hover:bg-white items-center font-bold btn rounded-full"><FcGoogle /> Continue With Google</button></div>
                                 <Typography color="gray" className="mt-3 text-center font-normal">
                                     Already have an account?{" "}
                                     <a href="/login" className="font-medium text-gray-900">
@@ -146,7 +146,7 @@ const Register = () => {
                         </div>
                     </div>
                     <div className="text-center hidden sm:block ">
-                        <img className=" md:w-[650px] md:h-[600px] lg:w-[685px] lg:h-[685px]   rounded-l-2xl" src="https://i.ibb.co.com/NN74N96/singin.png" alt="" />
+                        <img className=" md:w-[650px] md:h-[600px] lg:w-[685px] lg:h-[685px]    rounded-l-2xl" src="https://i.ibb.co.com/NN74N96/singin.png" alt="" />
                     </div>
                 </div>
             </div>
