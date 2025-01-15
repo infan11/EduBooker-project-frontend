@@ -2,7 +2,7 @@ import React from 'react';
 
 const CollegeDialogue = () => {
     return (
-        <div className='px-10 min-h-screen'>
+        <div className='px-10 '>
             <p className='text-center text-2xl font-extrabold mt-7 uppercase'>Welcome</p>
             <p className='text-center text-sm text-gray-500 mt-2 '>
 
