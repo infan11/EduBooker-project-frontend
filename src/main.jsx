@@ -7,6 +7,7 @@ import { router } from './Components/Routes/Routes/Routes'
 import AuthProvider from './Components/AuthProvider/AuthProvider'
 import { Toaster } from 'react-hot-toast'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { Helmet } from 'react-helmet'
 
 
 const queryClient = new QueryClient()
